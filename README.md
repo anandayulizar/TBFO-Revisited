@@ -36,3 +36,6 @@ Jangan lupa kata-kata yang biasanya ada di bawah spek tubes IRK,
 ```
 It's not worth it if you're not having fun!
 ```
+
+## Referensi
+- bit.ly/KitabSuciDingDong cari buku TBFO-nya sendiri ya:D
