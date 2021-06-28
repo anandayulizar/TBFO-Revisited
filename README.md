@@ -4,7 +4,7 @@ Halo kawan, apakah kalian tahu kalau TBFO itu di bawah lab IRK juga? Aku berani 
 
 Intinya, kalian akan membuat sebuah program yang memvisualisasikan Finite Automata dari rangkaian Regular Expressions yang diterima. Spesifikasi detail ada di bawah ini. Kalo kalian lupa itu apa, silahkan buka kitab dingdong dan cari buku TBFO huehehe.
 
-## Spesifikasi Wajib (1500)
+## Spesifikasi Wajib (2000)
 1. Program merupakan sebuah aplikasi berbasis desktop menggunakan bahasa <b>python/java/C#</b>. Penggunaan bahasa lain diharapkan menghubungi saya terlebih dahulu.
 2. Program dapat menerima input berupa *Regular Expressions*. Contoh: <br>
 `01*(10)* + (10)*`<br>
