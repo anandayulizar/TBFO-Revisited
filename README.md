@@ -12,14 +12,14 @@ Intinya, kalian akan membuat sebuah program yang memvisualisasikan Finite Automa
 *Catatan*: 
 - Penulisan epsilon dapat menggunakan 'e' untuk mempermudah
 - Format penggunaan white space (spasi) dibebaskan tidak harus seperti contoh
-3. Program dapat menampilkan visualisasi *Regular Expressions* tersebut dalam bentuk e-NFA.
-4. Program dapat menerima input string dan memeriksa apakah string tersebut diterima oleh e-NFA tersebut. Transisi state dalam proses pemeriksaan tersebut ditampilkan pada GUI. (Ex: highlight state yang sedang dilalui)
+3. Program dapat menampilkan visualisasi *Regular Expressions* tersebut dalam bentuk state diagram dari e-NFA.
+4. Program dapat menerima input string dan memeriksa apakah string tersebut diterima oleh e-NFA tersebut. Transisi state dalam proses pemeriksaan tersebut ditampilkan pada GUI. (Contoh: highlight state yang sedang dilalui)
 
 ## Spesifikasi Bonus
 ### 1. Membuat e-NFA melalui GUI (700)
 Pengguna dapat membuat e-NFA sendiri melalui GUI, tidak hanya melalui input *Regular Expressions*. Misalkan, pengguna dapat membuat beberapa state, lalu mendefinisikan transisi antar state. Alur pembuatan e-NFA melalui GUI dibebaskan.
 ### 2. Konversi e-NFA menjadi DFA (500)
-e-NFA yang telah ditampilkan dapat dikonversikan menjadi PDA. 
+e-NFA yang telah ditampilkan dapat dikonversikan menjadi PDA dan divisualisasikan. 
 
 ## Komponen Penilaian
 1. Kebenaran program dan fungsionalitas
