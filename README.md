@@ -6,16 +6,20 @@ Intinya, kalian akan membuat sebuah program yang memvisualisasikan Finite Automa
 
 ## Spesifikasi Wajib (1500)
 1. Program merupakan sebuah aplikasi berbasis desktop menggunakan bahasa python/java/C#. Penggunaan bahasa lain diharapkan menghubungi saya terlebih dahulu.
-2. Program dapat menerima input berupa *Regular Expressions*. Contoh:
-`01*(10)* + (10)*`
+2. Program dapat menerima input berupa *Regular Expressions*. Contoh: <br>
+`01*(10)* + (10)*`<br>
+`(e + 1)(01)*(e + 0)`<br>
+*Catatan*: 
+- Penulisan epsilon dapat menggunakan 'e' untuk mempermudah
+- Format penggunaan white space (spasi) dibebaskan tidak harus seperti contoh
 3. Program dapat menampilkan visualisasi *Regular Expressions* tersebut dalam bentuk e-NFA.
 4. Program dapat menerima input string dan memeriksa apakah string tersebut diterima oleh e-NFA tersebut. Proses pemeriksaan ditampilkan pada GUI. Misalkan dengan menggunakan highlight pada state yang sedang dilalui saat transisi
 
 ## Spesifikasi Bonus
-### 1. Membuat e-NFA melalui GUI (500)
-Pengguna dapat membuat FA sendiri melalui GUI, tidak melalui input *Regular Expressions*. Misalkan, pengguna pertama membuat beberapa state, lalu mendefinisikan transisi antar state.
+### 1. Membuat e-NFA melalui GUI (700)
+Pengguna dapat membuat e-NFA sendiri melalui GUI, tidak hanya melalui input *Regular Expressions*. Misalkan, pengguna dapat membuat beberapa state, lalu mendefinisikan transisi antar state. Alur pembuatan e-NFA melalui GUI dibebaskan.
 ### 2. Konversi e-NFA menjadi DFA (500)
-e-NFA yang didapat dari *Regular Expressions* dapat ditampilkan dalam bentuk DFA.
+e-NFA yang telah ditampilkan dapat dikonversikan menjadi PDA. 
 
 ## Komponen Penilaian
 1. Kebenaran program dan fungsionalitas
