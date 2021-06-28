@@ -5,7 +5,7 @@ Halo kawan, apakah kalian tahu kalau TBFO itu di bawah lab IRK juga? Aku berani 
 Intinya, kalian akan membuat sebuah program yang memvisualisasikan Finite Automata dari rangkaian Regular Expressions yang diterima. Spesifikasi detail ada di bawah ini. Kalo kalian lupa itu apa, silahkan buka kitab dingdong dan cari buku TBFO huehehe.
 
 ## Spesifikasi Wajib (2000)
-1. Program merupakan sebuah aplikasi berbasis desktop menggunakan bahasa <b>python/java/C#</b>. Penggunaan bahasa lain diharapkan menghubungi saya terlebih dahulu.
+1. Program merupakan sebuah aplikasi GUI berbasis desktop menggunakan bahasa <b>python/java/C#</b>. Penggunaan bahasa lain diharapkan menghubungi saya terlebih dahulu. Intinya, program yang dibuat gambarannya seperti saat tubes materi BFS DFS
 2. Program dapat menerima input berupa *Regular Expressions*. Contoh: <br>
 `01*(10)* + (10)*`<br>
 `(e + 1)(01)*(e + 0)`<br>
@@ -19,7 +19,7 @@ Intinya, kalian akan membuat sebuah program yang memvisualisasikan Finite Automa
 ### 1. Membuat e-NFA melalui GUI (700)
 Pengguna dapat membuat e-NFA sendiri melalui GUI, tidak hanya melalui input *Regular Expressions*. Misalkan, pengguna dapat membuat beberapa state, lalu mendefinisikan transisi antar state. Alur pembuatan e-NFA melalui GUI dibebaskan.
 ### 2. Konversi e-NFA menjadi DFA (500)
-e-NFA yang telah ditampilkan dapat dikonversikan menjadi PDA dan divisualisasikan. 
+e-NFA yang telah ditampilkan dapat dikonversikan menjadi DFA dan divisualisasikan. 
 
 ## Komponen Penilaian
 1. Kebenaran program dan fungsionalitas
