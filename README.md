@@ -1,45 +1,22 @@
-# TBFO-Revisited
-## Latar Belakang
-Halo kawan, apakah kalian tahu kalau TBFO itu di bawah lab IRK juga? Aku berani nebak pasti mayoritas dari kalian udah cukup lupa dengan ilmu-ilmu TBFO berhubung di semester 4 gaada yang matkul yang berupa lanjutan dari TBFO. Oleh karena itu, mari kita refresh ingatan kalian mengenai TBFO di sini:)
+##Cara Menjalankan Program
+1. Buka TBFO-Revisited.sln menggunakan Visual Studio versi tebaru (kalau engga kadang2 gabisa jalan karena break mode)
+2. Pastikan Nuget Package yang dibutuhkan sudah ditambahkan dalam Visual Studio (harusnya sudah sih, diantaranya:
+    -AutomaticGraphLayout
+    -AutomaticGraphLayout.Drawing
+    -AutomaticGraphLayout.GraphViewerGDI
+) 
+3. Jangan menggunakan Msagl Package untuk menggantikan AutomaticGraphLayout karena salah satu kelas yang digunakan (ToolBox) sudah deprecated 
+(asumsikan versi .NET Core tidak lebih jadul dari 3.1)
+4. Buka Form.cs dan run code
 
-Intinya, kalian akan membuat sebuah program yang memvisualisasikan Finite Automata dari rangkaian Regular Expressions yang diterima. Spesifikasi detail ada di bawah ini. Kalo kalian lupa itu apa, silahkan buka kitab dingdong dan cari buku TBFO huehehe.
+##Fitur Program
+1. Menerima string regex dengan syntax pada umumnya (spasi akan diabaikan oleh program), dengan urutan operasi paling duluan *, concat, +
+2. Karakter yang tersedia hanya e, 0, 1. Apabila ingin mengganti menambah dapat ganti variabel characters pada Form1.cs menjadi "e012" misalnya
+3. Saat submit ditekan, bakal muncul gambar eNFA dan DFA dari Regex yang ada. Accepted state diwarnai kuning, state awal pasti 0
+4. Silakan input string pada textArea kedua dan setiap dimasukkan karakter baru/ dihapuskan, 
+graph akan menunjukkan jalan dengan mewarnai panah berwarna merah. State yang sekarang dapat dikunjungi akan memiliki outline merah
+5. Dapat juga secara manual menambahkan/mengurangi final state pada tombol Add/Remove dengan terlebih dahulu memilih state mana yang mau diubah
+6. Dapat juga secara manual menambahkan edge eNFA pada tombol Add Edge, dengan mengisi dahulu properti edgenya
+7. Error handling saya ccd, jadi tolong masukkan Regex dan Textnya menggunakan karakter yang benar
 
-## Spesifikasi Wajib (2000)
-1. Program merupakan sebuah aplikasi GUI berbasis desktop menggunakan bahasa <b>python/java/C#</b>. Penggunaan bahasa lain diharapkan menghubungi saya terlebih dahulu. Intinya, program yang dibuat gambarannya seperti saat tubes materi BFS DFS
-2. Program dapat menerima input berupa *Regular Expressions*. Contoh: <br>
-`01*(10)* + (10)*`<br>
-`(e + 1)(01)*(e + 0)`<br>
-*Catatan*: 
-- Penulisan epsilon dapat menggunakan 'e' untuk mempermudah
-- Format penggunaan white space (spasi) dibebaskan tidak harus seperti contoh
-3. Program dapat menampilkan visualisasi *Regular Expressions* tersebut dalam bentuk state diagram dari e-NFA.
-4. Program dapat menerima input string dan memeriksa apakah string tersebut diterima oleh e-NFA tersebut. Transisi state dalam proses pemeriksaan tersebut ditampilkan pada GUI. (Contoh: highlight state yang sedang dilalui)
-
-## Spesifikasi Bonus
-### 1. Membuat e-NFA melalui GUI (700)
-Pengguna dapat membuat e-NFA sendiri melalui GUI, tidak hanya melalui input *Regular Expressions*. Misalkan, pengguna dapat membuat beberapa state, lalu mendefinisikan transisi antar state. Alur pembuatan e-NFA melalui GUI dibebaskan.
-### 2. Konversi e-NFA menjadi DFA (500)
-e-NFA yang telah ditampilkan dapat dikonversikan menjadi DFA dan divisualisasikan. 
-
-## Komponen Penilaian
-1. Kebenaran program dan fungsionalitas
-2. Algoritma
-3. Modularitas
-4. Keindahan UI
-5. Kreativitas. Kreativitas apapun akan dihargai :D
-
-## Pengerjaan
-Fork repository ini dan kerjakan di repository hasil fork kalian. Apabila sudah selesai, dapat melakukan pull request. Sabar ya kawan nanti pasti akan dinilai pada waktunya
-
-Jangan lupa bikin README!! README minimal berisi cara pengerjaan program dan prerequisite untuk menjalankan program. Aku bakal pura-pura bodoh saat meriksa jadi kalo README-nya gaada cara menjalankannya, risiko ditanggung sendiri :D Sumpah gais saat kalian jadi asisten, bakal gatel ngeliat yang README-nya gajelas terus harus nyari-nyari sendiri klo di-nolin kan kasian:)
-
-## Lain-lain
-Jika ada pertanyaan, silahkan buat issue github dan pc via line (id line: yulizar57).<br>
-Selamat mengerjakan kawan!:D<br>
-Jangan lupa kata-kata yang biasanya ada di bawah spek tubes IRK,
-```
-It's not worth it if you're not having fun!
-```
-
-## Referensi
-- bit.ly/KitabSuciDingDong cari buku TBFO-nya sendiri ya:D
+Semoga tidak ada masalah dalam menjalankan program, terima kasih
